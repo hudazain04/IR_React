@@ -53,8 +53,8 @@ export const SearchForm = () => {
                   <SelectValue placeholder="Choose dataset..." />
                 </SelectTrigger>
                 <SelectContent  className="bg-white border-gray-200">
-                  <SelectItem value="cranfield">cranfield</SelectItem>
-                  <SelectItem value="dataset2">News Articles Dataset</SelectItem>
+                  <SelectItem value="beir/quora/dev">quora</SelectItem>
+                  <SelectItem value="antique/train">antique</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -73,6 +73,7 @@ export const SearchForm = () => {
                   <SelectItem value="vsm">Vector Space Model (VSM)</SelectItem>
                   <SelectItem value="word2vec">Word2Vec</SelectItem>
                   <SelectItem value="hybrid">Hybrid Approach</SelectItem>
+                  <SelectItem value="bm25">BM25 Approach</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -107,7 +108,7 @@ export const SearchForm = () => {
               htmlFor="additional-features"
               className="text-sm font-medium text-gray-700 cursor-pointer"
             >
-              Enable additional features (query expansion, relevance feedback)
+              Enable additional features (Vector Store : FAISS)
             </Label>
           </div>
 

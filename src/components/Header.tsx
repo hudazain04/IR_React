@@ -22,6 +22,8 @@ export const Header = () => {
             <span>Word2Vec</span>
             <span>•</span>
             <span>Hybrid Search</span>
+             <span>•</span>
+            <span>BM25 Search</span>
           </div>
         </div>
       </div>
